@@ -8,12 +8,7 @@ public class FizzBuzz {
 	 * @return cf. énoncé
 	 */
 	public static String fizzBuzz(int i) {
-		if(i == 0)
-			return "0";
-		else if(i == 2)
-			return "2";
-		else
-			return "1";
+		return Integer.toString(i);
 	}
 
 }
