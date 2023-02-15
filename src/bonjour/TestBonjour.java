@@ -15,7 +15,7 @@ class TestBonjour {
 	void testAlice() {
 		assertEquals("Bonjour, Alice.", Bonjour.bonjour("Alice"));
 	}
-	
+
 	@Test
 	void testNul() {
 		assertEquals("Bonjour, ami.", Bonjour.bonjour(null));
@@ -25,13 +25,21 @@ class TestBonjour {
 	void testHurleNorbert() {
 		assertEquals("BONJOUR, NORBERT !", Bonjour.bonjour("NORBERT"));
 	}
+
 	@Test
 	void testHurlePatrick() {
 		assertEquals("BONJOUR, PATRICK !", Bonjour.bonjour("PATRICK"));
 	}
+
 	@Test
 	void testTicEtTac() {
 		assertEquals("Bonjour, Tic et Tac.", Bonjour.bonjour("Tic", "Tac"));
 	}
 
+	@Test
+	void testAlainBarabeCharlotte() {
+		assertEquals("Bonjour, Alain, Barnabé et Charlotte.", Bonjour.bonjour("Alain", "Barnabé", "Charlotte"));
+	}
+
+	
 }
