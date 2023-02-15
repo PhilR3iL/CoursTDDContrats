@@ -20,4 +20,13 @@ class TestFizzbuzz {
 	void testFizzBuzz2() {
 		assertEquals("2", FizzBuzz.fizzBuzz(2));
 	}
+	
+	@Test
+	void testFizzBuzz4() {
+		assertEquals("4", FizzBuzz.fizzBuzz(4));	
+	}
+	@Test
+	void testFizzBuzz3() {
+		assertEquals("Fizz", FizzBuzz.fizzBuzz(3));	
+	}
 }
