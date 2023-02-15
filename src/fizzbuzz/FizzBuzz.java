@@ -9,16 +9,20 @@ public class FizzBuzz {
 	 * @return cf. énoncé
 	 */
 	public static String fizzBuzz(int i) {
-		if(i == 0)
-			return "0";
-		if (i % 3 == 0 && i % 5 == 0)
-			return "FizzBuzz";
-		else if (i % 3 == 0)
-			return "Fizz";
-		else if(i % 5 == 0)
-			return "Buzz";
-		else
-			return Integer.toString(i);
+		String res = "0";
+		// Cas 0 particulier.
+		if (i != 0) {
+			if (i % 3 == 0 && i % 5 == 0)
+				res = "FizzBuzz";
+			else if (i % 3 == 0)
+				res = "Fizz";
+			else if (i % 5 == 0)
+				res = "Buzz";
+			else
+				// Cas général
+				res = Integer.toString(i);
+		}
+		return res;
 	}
 
 }
