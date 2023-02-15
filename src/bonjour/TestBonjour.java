@@ -41,5 +41,10 @@ class TestBonjour {
 		assertEquals("Bonjour, Alain, Barnabé et Charlotte.", Bonjour.bonjour("Alain", "Barnabé", "Charlotte"));
 	}
 
+
+	@Test
+	void testAlainBarabeCharlotteDiane() {
+		assertEquals("Bonjour, Alain, Barnabé, Charlotte et Diane.", Bonjour.bonjour("Alain", "Barnabé", "Charlotte", "Diane"));
+	}
 	
 }

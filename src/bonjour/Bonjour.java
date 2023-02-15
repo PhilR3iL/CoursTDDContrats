@@ -11,6 +11,8 @@ public class Bonjour {
 			return "Bonjour, " + noms[0] + ".";
 		} else if (noms.length == 3) {
 			return "Bonjour, " + noms[0] + ", " + noms[1] + " et " + noms[2] + ".";
+		} else if (noms.length == 4) {
+			return "Bonjour, " + noms[0] + ", " + noms[1] + ", " + noms[2] + " et " + noms[3] + ".";
 		} else {
 			return "Bonjour, " + noms[0] + " et " + noms[1] + ".";
 		}
