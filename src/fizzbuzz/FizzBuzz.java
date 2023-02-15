@@ -9,7 +9,7 @@ public class FizzBuzz {
 	 * @return cf. énoncé
 	 */
 	public static String fizzBuzz(int i) {
-		if (i == 3)
+		if (i == 3 || i == 6)
 			return "Fizz";
 		else
 			return Integer.toString(i);
