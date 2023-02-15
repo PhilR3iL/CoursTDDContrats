@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 class TestFizzbuzz {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testFizzbuzz0() {
+		assertEquals("0", FizzBuzz.fizzBuzz(0));
 	}
 
 }
