@@ -9,10 +9,13 @@ public class Bonjour {
 			if (noms[0].equals(noms[0].toUpperCase()))
 				return "BONJOUR, " + noms[0].toUpperCase() + " !";
 			return "Bonjour, " + noms[0] + ".";
-		} else if (noms.length == 3) {
-			return "Bonjour, " + noms[0] + ", " + noms[1] + " et " + noms[2] + ".";
-		} else if (noms.length == 4) {
-			return "Bonjour, " + noms[0] + ", " + noms[1] + ", " + noms[2] + " et " + noms[3] + ".";
+		} else if (noms.length >= 3) {
+			String res = "Bonjour, ";
+			for (int i = 0; i < noms.length - 2; i++) {
+				res += noms[i] + ", ";
+			}
+			res += noms[noms.length - 2] + " et " + noms[noms.length - 1] + ".";
+			return res;
 		} else {
 			return "Bonjour, " + noms[0] + " et " + noms[1] + ".";
 		}
