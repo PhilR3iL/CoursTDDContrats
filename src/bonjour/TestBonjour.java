@@ -29,5 +29,9 @@ class TestBonjour {
 	void testHurlePatrick() {
 		assertEquals("BONJOUR, PATRICK !", Bonjour.bonjour("PATRICK"));
 	}
+	@Test
+	void testTicEtTac() {
+		assertEquals("Bonjour, Tic et Tac.", Bonjour.bonjour("Tic", "Tac"));
+	}
 
 }
