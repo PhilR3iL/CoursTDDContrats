@@ -13,6 +13,8 @@ public class FizzBuzz {
 			return "0";
 		if (i % 3 == 0)
 			return "Fizz";
+		else if(i == 5)
+			return "Buzz";
 		else
 			return Integer.toString(i);
 	}
